@@ -30,7 +30,7 @@ const SinglePaper = ({deleteNote, updateNote,e}) => {
                                 <TitleIcon color='info' />
                             </Avatar>
                         </ListItemAvatar>
-                        <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', width: '200px' }}> <Typography noWrap > {e.title}</Typography>  </div>
+                        <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', width: '200px' }}> <Typography noWrap variant='h5' > {e.title}</Typography>  </div>
                     </ListItem>
 
                     <ListItem sx={{ overflow: 'hidden' }}>
@@ -39,7 +39,7 @@ const SinglePaper = ({deleteNote, updateNote,e}) => {
                                 <PersonIcon color='info' />
                             </Avatar>
                         </ListItemAvatar>
-                        <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', width: '200px' }}> <Typography noWrap > {e.author}</Typography>  </div>
+                        <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', width: '200px' }}> <Typography noWrap variant='h6'> {e.author}</Typography>  </div>
                     </ListItem>
 
                     <ListItem >
