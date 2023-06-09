@@ -17,15 +17,12 @@ const Main = () => {
     const writeToDatabase = (e) => {
         e.preventDefault()
         const noteRef = ref(db, 'Notes');
-        console.log(noteRef);
         const newNoteRef = push(noteRef)
-        console.log(newNoteRef);
         set(newNoteRef, {
             title: title,
             desc: desc,
             author: author
         })
-        console.log(db);
         setTitle('');
         setDesc('');
         setAuthor('');
@@ -43,7 +40,6 @@ const Main = () => {
                     ...data[id]
                 })
             }
-            // console.log(noteArr);
             setNoteList(noteArr);
         })
     }, [])
@@ -53,7 +49,6 @@ const Main = () => {
         setDesc(note.desc)
         setAuthor(note.author)
         setEdit(true);
-        console.log(note);
         setTempId(note.id)
         // setNote(note.todo)
     }
